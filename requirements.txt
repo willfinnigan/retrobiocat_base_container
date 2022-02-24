@@ -45,6 +45,6 @@ openpyxl==3.0.7
 bioservices==1.8.3
 
 jax-unirep==2.1.0
-environs==9.5.0n
+environs==9.5.0
 
 tables==3.7.0
