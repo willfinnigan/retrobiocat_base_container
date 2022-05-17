@@ -12,6 +12,7 @@ RUN conda install -c conda-forge pygraphviz=1.8
 RUN conda install -c conda-forge rdkit=2021.03.5
 RUN conda install -c conda-forge tensorflow=2.6.2
 RUN conda install -c conda-forge scikit-learn=1.0.2
+RUN conda install -c pytorch pytorch=1.11.0
 
 COPY ./requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
