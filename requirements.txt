@@ -60,5 +60,3 @@ unpywall==0.2.2
 pdfminer.six
 python-docx
 opencv-python
-
-mongoengine==0.27.0

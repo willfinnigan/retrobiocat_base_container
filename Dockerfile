@@ -1,15 +1,11 @@
-FROM continuumio/miniconda3:4.10.3
-
-RUN conda install python=3.9
+FROM continuumio/miniconda3:23.5.2-0
 
 RUN apt-get update
 RUN apt-get install ncbi-blast+ graphviz wget -y
 
 RUN wget https://fastdl.mongodb.org/tools/db/mongodb-database-tools-debian10-x86_64-100.2.1.deb
 RUN apt-get install ./mongodb-database-tools-debian10-x86_64-100.2.1.deb
-
-RUN conda install -c conda-forge rdkit=2021.03.5 pytorch tensorflow pygraphviz=1.8 scikit-learn=1.0.2
-
-COPY ./requirements.txt ./requirements.txt
-RUN pip install -r requirements.txt
+COPY . /
+RUN conda env create -n rbc -f env.yml
+SHELL ["conda", "run", "-n", "rbc", "/bin/bash", "-c"]
 
