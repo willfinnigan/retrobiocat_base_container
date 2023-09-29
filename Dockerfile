@@ -8,11 +8,8 @@ RUN apt-get install ncbi-blast+ graphviz wget -y
 RUN wget https://fastdl.mongodb.org/tools/db/mongodb-database-tools-debian10-x86_64-100.2.1.deb
 RUN apt-get install ./mongodb-database-tools-debian10-x86_64-100.2.1.deb
 
-RUN conda install -c conda-forge tensorflow=2.11.1
-RUN conda install -c conda-forge pytorch
-RUN conda install -c conda-forge pygraphviz=1.8
-RUN conda install -c conda-forge rdkit=2021.03.5
-RUN conda install -c conda-forge scikit-learn=1.0.2
+RUN conda install -c conda-forge rdkit=2021.03.5 pytorch tensorflow pygraphviz=1.8 scikit-learn=1.0.2
 
 COPY ./requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
+
