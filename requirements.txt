@@ -49,8 +49,6 @@ bioservices==1.8.3
 jax-unirep==2.2.0
 environs==9.5.0
 
-tables==3.7.0
-
 setuptools==59.5.0
 pytorch-tree-lstm==0.1.3
 torchmetrics==0.8.2
@@ -62,5 +60,7 @@ unpywall==0.2.2
 pdfminer.six
 python-docx
 opencv-python
-pyOpenSSL
-mongoengine
+
+pyOpenSSL==23.2.0
+mongoengine==0.27.0
+cryptography==41.0.4
