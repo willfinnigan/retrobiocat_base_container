@@ -61,5 +61,6 @@ sqlitedict==2.0.0
 unpywall==0.2.2
 pdfminer.six
 python-docx
-SQLAlchemy
 opencv-python
+pyOpenSSL
+mongoengine
