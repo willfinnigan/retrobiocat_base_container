@@ -8,3 +8,6 @@ RUN apt-get install ./mongodb-database-tools-debian10-x86_64-100.2.1.deb
 COPY . /
 RUN conda env create -n rbc -f env.yml
 SHELL ["conda", "run", "-n", "rbc", "/bin/bash", "-c"]
+
+RUN pip install -r requirements.txt
+
