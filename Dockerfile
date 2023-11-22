@@ -9,5 +9,7 @@ COPY . /
 RUN conda env create -n rbc -f env.yml
 SHELL ["conda", "run", "-n", "rbc", "/bin/bash", "-c"]
 
+RUN apt-get -y install poppler-utils
+
 RUN pip install -r requirements.txt
 
