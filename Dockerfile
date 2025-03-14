@@ -1,4 +1,4 @@
-FROM continuumio/miniconda3:23.5.2-0
+FROM continuumio/miniconda3:23.10.0-1
 
 RUN apt-get update
 RUN apt-get -y install ncbi-blast+ graphviz libgl1
