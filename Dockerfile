@@ -11,5 +11,7 @@ SHELL ["conda", "run", "-n", "rbc", "/bin/bash", "-c"]
 
 RUN apt-get update && apt-get -y install poppler-utils ghostscript python3-tk
 
+RUN conda install -c conda-forge chemicalite
+
 RUN pip install -r requirements.txt
 
