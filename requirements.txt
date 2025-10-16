@@ -1,6 +1,6 @@
 rdkit>=2021.03.5
 scikit-learn>=1.0.0
-tensorflow==2.13.0
+tensorflow==2.14.0
 pytest
 sqlalchemy
 six
@@ -34,7 +34,7 @@ flask_talisman==0.7.0
 flask-session==0.3.2
 Flask-JSGlue==0.3.1
 flask-cors==3.0.9
-Flask-Limiter==1.4
+Flask-Limiter==4.0.0
 Flask-Caching==1.9.0
 Flask-Security-Too==3.4.4
 flask_mongoengine==1.0.0
