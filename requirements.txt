@@ -1,6 +1,6 @@
 rdkit>=2021.03.5
 scikit-learn>=1.0.0
-tensorflow>=2.6.0,<=2.8.0
+tensorflow==2.13.0
 pytest
 sqlalchemy
 six
@@ -14,8 +14,6 @@ gdown
 mkdocs
 
 loguru
-google-generativeai
-docling
 transformers==4.44.2
 
 requests-cache==1.1.0
@@ -70,6 +68,4 @@ jax-unirep==2.2.0
 environs
 setuptools
 
-unpywall
-protobuf<=3.20.3
 numpy==1.26.4
